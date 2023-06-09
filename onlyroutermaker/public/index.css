@@ -1,0 +1,327 @@
+.ly-html-app-loading-wrp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  min-height: 90vh;
+}
+
+.ly-html-app-loading-wrp h1 {
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.ly-html-app-loading-wrp .logo-container {
+  position: relative;
+  max-width: 200px;
+  max-height: 120px;
+  min-width: 140px;
+  min-height: 84px;
+  width: 27.8vw;
+  height: 16.7vw;
+  margin-bottom: 8px;
+}
+
+.ly-html-app-loading-wrp .loading-text {
+  color: rgba(155, 162, 180, 1);
+  font-size: 14px;
+}
+
+@keyframes logoMove {
+  20% {
+    top: 0%;
+  }
+
+  100% {
+    top: 18%;
+  }
+}
+
+@keyframes shadowChange {
+  20% {
+    width: 19.5%;
+    height: 9.8%;
+  }
+
+  100% {
+    width: 26.2%;
+    height: 9.8%;
+  }
+}
+
+@keyframes ballMove {
+  0% {
+    opacity: 0.2;
+    bottom: 10%;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes ballMove1 {
+  60% {
+    left: 40%;
+    bottom: 10%;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    left: 0%;
+    bottom: 15%;
+  }
+}
+
+@keyframes ballMove2 {
+  60% {
+    left: 40%;
+    bottom: 10%;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    left: 12%;
+    bottom: 20%;
+  }
+}
+
+@keyframes ballMove3 {
+  60% {
+    left: 40%;
+    bottom: 10%;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    left: 20%;
+    bottom: 8%;
+  }
+}
+
+@keyframes ballMove4 {
+  60% {
+    right: 40%;
+    bottom: 10%;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    right: 20%;
+    bottom: 8%;
+  }
+}
+
+@keyframes ballMove5 {
+  60% {
+    right: 40%;
+    bottom: 10%;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    right: 15%;
+    bottom: 20%;
+  }
+}
+
+@keyframes ballMove6 {
+  60% {
+    right: 40%;
+    bottom: 10%;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    right: 10%;
+    bottom: 10%;
+  }
+}
+
+@keyframes ballMove7 {
+  60% {
+    right: 40%;
+    bottom: 10%;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    right: 0%;
+    bottom: 23%;
+  }
+}
+
+.ly-html-app-loading-wrp .logo-container {
+  position: relative;
+  max-width: 200px;
+  max-height: 120px;
+  min-width: 140px;
+  min-height: 84px;
+  width: 27.8vw;
+  height: 16.7vw;
+}
+
+.ly-html-app-loading-wrp .logo {
+  animation: logoMove 0.5s ease-in 0s infinite alternate none;
+  width: 46.3%;
+  height: 69.6%;
+  position: absolute;
+  top: 0%;
+  left: 28.65%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ly-html-app-loading-wrp .shadow {
+  animation: shadowChange 0.5s ease-in 0.1s infinite alternate none;
+  width: 19.5%;
+  height: 9.8%;
+  position: absolute;
+  bottom: 0px;
+  left: 48%;
+  transform: translate(-50%);
+  border-radius: 100%;
+  background-color: var(--ly-background-color);
+}
+
+.ly-html-app-loading-wrp .ball {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.ly-html-app-loading-wrp .ball1 {
+  animation: ballMove1 1s linear 0s infinite normal none;
+  width: 4.87%;
+  height: 7.84%;
+  background-color: var(--ly-color-theme-light-2);
+}
+
+.ly-html-app-loading-wrp .ball2 {
+  animation: ballMove2 1s linear 0s infinite normal none;
+  width: 3.65%;
+  height: 5.88%;
+  background-color: var(--ly-secondary-color-purple);
+}
+
+.ly-html-app-loading-wrp .ball3 {
+  animation: ballMove3 1s linear 0s infinite normal none;
+  width: 3.65%;
+  height: 5.88%;
+  background-color: var(--ly-color-theme);
+}
+
+.ly-html-app-loading-wrp .ball4 {
+  animation: ballMove4 1s linear 0s infinite normal none;
+  width: 3.65%;
+  height: 5.88%;
+  background-color: var(--ly-color-theme-light-2);
+}
+
+.ly-html-app-loading-wrp .ball5 {
+  animation: ballMove5 1s linear 0s infinite normal none;
+  width: 4.87%;
+  height: 7.84%;
+  background-color: var(--ly-color-theme-light-2);
+}
+
+.ly-html-app-loading-wrp .ball6 {
+  animation: ballMove6 1s linear 0s infinite normal none;
+  width: 3.65%;
+  height: 5.88%;
+  background-color: var(--ly-color-theme-light-2);
+}
+
+.ly-html-app-loading-wrp .ball7 {
+  animation: ballMove7 1s linear 0s infinite normal none;
+  width: 3.65%;
+  height: 5.88%;
+  background-color: var(--ly-color-theme);
+}
+
+.ly-html-app-loading-wrp .logo-container .logo {
+  background-image: url("data:image/png;base64,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");
+}
+
+/* .app-loading-wrp .loading-wrp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 98px;
+} */
+
+/* .dot {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  font-size: 64px;
+  transform: rotate(45deg);
+  animation: antRotate 1.2s infinite linear;
+}
+
+.dot i {
+  position: absolute;
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-color: #18acff;
+  border-radius: 100%;
+  opacity: 0.3;
+  transform: scale(0.75);
+  transform-origin: 50% 50%;
+  animation: antSpinMove 1s infinite linear alternate;
+}
+
+.dot i:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.dot i:nth-child(2) {
+  top: 0;
+  right: 0;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.dot i:nth-child(3) {
+  right: 0;
+  bottom: 0;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.dot i:nth-child(4) {
+  bottom: 0;
+  left: 0;
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+} */
+
+/* @keyframes antRotate {
+  to {
+    -webkit-transform: rotate(405deg);
+    transform: rotate(405deg);
+  }
+}
+
+@-webkit-keyframes antRotate {
+  to {
+    -webkit-transform: rotate(405deg);
+    transform: rotate(405deg);
+  }
+} */
+
+/* @keyframes antSpinMove {
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes antSpinMove {
+  to {
+    opacity: 1;
+  }
+} */
