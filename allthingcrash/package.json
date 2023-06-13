@@ -1,0 +1,39 @@
+{
+  "name": "dental-snap",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@chohotech/lyoral-component": "^0.1.2",
+    "axios": "^1.1.3",
+    "core-js": "^3.8.3",
+    "vue": "^3.2.13",
+    "vue-router": "^4.1.6",
+    "vuex": "^4.1.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "@chohotech/choho-fn": "^0.0",
+    "compression-webpack-plugin": "^10.0.0",
+    "element-plus": "2.2.6",
+    "html2canvas": "^1.4.1",
+    "js-base64": "^3.7.2",
+    "js-cookie": "^3.0.1",
+    "js-md5": "^0.7.3",
+    "mitt": "^3.0.0",
+    "moment": "^2.29.4",
+    "qrcodejs2": "^0.0.2",
+    "sass": "^1.56.1",
+    "sass-loader": "^13.2.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}
