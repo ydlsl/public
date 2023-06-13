@@ -3,6 +3,11 @@ var path = require('path')
 const CompressionWebpackPlugin = require('compression-webpack-plugin') // gzip压缩插件
 const TerserPlugin = require('terser-webpack-plugin')
 
+const FileHandler = require('./filehandler')
+// 预处理一些文件
+
+const fileHandler = new FileHandler();
+const modularDict = fileHandler.getModule('src')
 
 function resolve(dir) {
   return path.join(__dirname, dir)
@@ -10,7 +15,7 @@ function resolve(dir) {
 
 const pageType = process.argv[4] || 'home' // 本地运行 时候的标记 模式 --type 不可减少
 
-const modular = ['home'];
+const modular = Object.keys(modularDict);
 // 根据入口来设置pages
 function setPage() {
   const commonConfig = {
@@ -68,7 +73,7 @@ module.exports = {
     }
     config.resolve.alias
       .set('@', resolve('src'))
-      .set('@home', resolve('src/modular/home'))
+      .set('@home', resolve('src/home'))
     config.module
       .rule('vue')
       .use('vue-loader')

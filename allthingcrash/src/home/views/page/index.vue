@@ -1,6 +1,6 @@
 <template>
   <div>
-    welcome to new and routermaker and all lest  not module read
+    welcome to all lest 
   </div>
 </template>
 
