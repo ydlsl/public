@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdental_snap=self.webpackChunkdental_snap||[]).push([[473],{473:function(n,e,r){r.r(e),r.d(e,{default:function(){return a}});var t=r(252);var u={};var a=(0,r(744).Z)(u,[["render",function(n,e,r,u,a,l){return(0,t.wg)(),(0,t.iD)("div",null," welcome to onlynew ")}]])}}]);
