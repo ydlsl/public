@@ -28,7 +28,7 @@ function setPage() {
       [item]: {
         entry: `src/${item}/main`, //`src/${item}/main`
         ...commonConfig,
-        title: `ly-${item}-${new Date().toLocaleString()}`,
+        title: `ly-allthingcrash-${item}-${new Date().toLocaleString()}`,
         chunks: ["chunk-vendors", "chunk-common", `${item}`]
       }
     }

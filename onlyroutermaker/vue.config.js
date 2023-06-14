@@ -25,7 +25,7 @@ function setPage() {
       [item]: {
         entry: `src/${item}/main`,
         ...commonConfig,
-        title: `ly-${item}-${new Date().toLocaleString()}`,
+        title: `ly-routermaker-${item}-${new Date().toLocaleString()}`,
         chunks: ["chunk-vendors", "chunk-common", `${item}`]
       }
     }
